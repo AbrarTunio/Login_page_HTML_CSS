@@ -11,17 +11,17 @@
       rel="stylesheet"
     />
     <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<!--      <link rel="stylesheet" href="css/all.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <title>Login Form</title>
   </head>
   <body>
     <div class="container">
-      <img class="wave" src="image/wave.svg" alt="There was a wave" />
+      <img class="wave" src="wave.svg" alt="There was a wave" />
       <div class="img">
         <img
           class="team-img"
-          src="image/certificate.svg"
+          src="certificate.svg"
           alt="team working on project"
         />
       </div>
@@ -29,7 +29,7 @@
         <form action="login.php" method="post">
           <img
             class="avatar"
-            src="image/avtar.svg"
+            src="avtar.svg"
             alt="avatar of person logging in"
           />
           <h2>Promise Served!</h2>
@@ -37,12 +37,7 @@
             <div class="i">
               <i class="fas fa-user"></i>
             </div>
-            <!-- php code goes here -->
-            <?php if ( isset($_GET['error'])) { ?>
-                   <p class="error"> <?php echo $_GET['error'] ;?> </p> 
-            <?php } ?>
-            <!-- php code ends here -->
-            <div>
+          <div>
               <h5>Username</h5>
               <input class="input" type="text" name="username" />
             </div>
